@@ -7,6 +7,10 @@ import java.util.Queue;
 //A collection designed for holding elements prior to processing
 public class TheQueue {
     public static void main(String[] args) {
+LinkedList<Person> linkedList = new LinkedList<>();
+    }
+
+    private static void queues() {
         Queue<Person> supermarket = new LinkedList<>();
 
         supermarket.add(new Person("Alex", 23));
@@ -19,7 +23,6 @@ public class TheQueue {
         System.out.println(supermarket.poll());
         System.out.println(supermarket.size());
         System.out.println(supermarket.peek());
-
     }
 
     static record Person(String name, int age){
