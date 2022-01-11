@@ -13,6 +13,7 @@ LinkedList<Person> linkedList = new LinkedList<>();
 linkedList.add(new Person("Alex", 23));
 linkedList.add(new Person("Ben", 24));
 linkedList.add(new Person("Charlie", 25));
+linkedList.addFirst(new Person("Edwin", 29));
 
 ListIterator<Person> personListIterator = linkedList.listIterator();
 while (personListIterator.hasNext()){
