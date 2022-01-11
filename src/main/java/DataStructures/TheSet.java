@@ -12,12 +12,23 @@ public class TheSet {
         balls.add(new Ball("blue"));
         balls.add(new Ball("red"));
         balls.add(new Ball("yellow"));
+        System.out.println(balls.size());
 
 
         balls.forEach(System.out::println);
     }
 
-    record Ball(String color){
+    static class Ball {
+
+        String color;
+
+        public Ball(String color) {
+            this.color = color;
+        }
+
+        }
+
+        //record Ball(String color){
 
     }
-}
+
